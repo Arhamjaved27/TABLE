@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(64, 76, 117);
+        }
+
+        /* <!-- ///////////////// Table Css /////////////////////////// --> */
+
+
+        table {
+            border-collapse: collapse;
+            margin-top: 70px;
+            width: 70%;
+            box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.281);
+            background-color: white;
+        }
+
+       
+
+        thead{
+            box-shadow: 0px 6px 6px  rgba(0, 0, 0, 0.281);
+        }
+        th,
+        td {
+            padding: 20px 30px;
+            text-align: left;
+            border-bottom: 1px solid white;
+            font-weight: 800;
+            
+        }
+        .light{
+            background-color: rgb(245, 246, 252);
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        span{
+            display: block;
+            background-color: rgb(255, 183, 0);
+            padding: 6px 5px;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .green{
+            background-color: rgb(5, 196, 5);
+        }
+        .blue{
+            background-color: rgb(16, 16, 255);
+        }
+
+        .inv{
+            color: blue;
+        }
+        .act{
+            display: flex;
+            gap: 5px;
+        }
+        .actbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(206, 210, 255);
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+
+    <!-- ///////////////// Table /////////////////////////// -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>INVOICE</th>
+                <th>NAME</th>
+                <th>DATE</th>
+                <th>PAYMENT STATUS</th>
+                <th>AMOUNT</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="inv">NA</td>
+                <td>Pratham</td>
+                <td>01/04/2022</td>
+                <td><span>Not Completed </span></td>
+                <td>22,000</td>
+                <td class="act">
+                    <span class="actbox"><img src="pencil.png" alt=""></span>
+                    <span class="actbox"><img src="bin.png" alt=""></span>
+                  </td>
+            </tr>
+            <tr class="light">
+                <td class="inv">INV_1</td>
+                <td>Doe</td>
+                <td>01/04/2022</td>
+                <td><span class="green"> Completed</span></td>
+                <td>23,000</td>
+                <td class="act" ><span class="actbox"><img src="pencil.png" alt=""></span>
+                    <span class="actbox"><img src="bin.png" alt=""></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="inv">INV_2</td>
+                <td>Cristian</td>
+                <td>01/04/2022</td>
+                <td><span class="blue">Processing</span></td>
+                <td>28,000</td>
+                <td class="act"><span class="actbox"><img src="pencil.png" alt=""></span>
+                    <span class="actbox"><img src="bin.png" alt=""></span>
+                </td>
+            </tr>
+            <tr class="light">
+                <td class="inv">INV_3</td>
+                <td>Kiran</td>
+                <td>01/04/2022</td>
+                <td><span class="blue">Processing </span></td>
+                <td>25,000</td>
+                <td class="act"><span class="actbox"><img src="pencil.png" alt=""></span>
+                    <span class="actbox"><img src="bin.png" alt=""></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="inv">INV_4</td>
+                <td>Kite</td>
+                <td>01/04/2022</td>
+                <td><span class="green">Completed </span></td>
+                <td>22,000</td>
+                <td class="act"><span class="actbox"><img src="pencil.png" alt=""></span>
+                    <span class="actbox"><img src="bin.png" alt=""></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
